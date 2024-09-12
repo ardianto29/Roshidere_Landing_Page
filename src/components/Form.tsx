@@ -5,7 +5,7 @@ interface FormProps {
 export function Form({ className = "" }: FormProps) {
   return (
     <div className={`flex -translate-y-1 translate-x-1 ${className}`}>
-      <button className="rounded-bl-lg w-[40%] rounded-tl-lg border-r-0 border-primary bg-background px-5 font-lato font-semibold text-secondary">
+      <button className="rounded-bl-lg w-[40%] rounded-tl-lg border-[2px] border-r-0 border-primary bg-background px-5 font-lato font-semibold text-secondary">
         Sign Up
       </button>
       <input
