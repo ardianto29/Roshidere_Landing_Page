@@ -67,7 +67,7 @@ export default {
         // => @media (max-width: 639px) { ... }
       },
       backgroundImage: {
-        "hero-section": "url('/assets/herosection-x1.png')",
+        "hero-section": "url('../../public/images/bannerAlya.jpeg')",
       },
     },
   },
