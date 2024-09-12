@@ -18,9 +18,9 @@ export function RevealImg({ children, className, origin, bg }: RevealImgProps) {
           [origin === "left" || origin === "right" ? "scaleX" : "scaleY"]:
             isInView ? 0 : 1,
           transformOrigin: origin,
-          transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
+          transition: { duration: 1.1, ease: [0, 0.55, 0.45, 1] },
         }}
-        className={`absolute left-0 top-0 z-30 h-full w-full ${bg}`}
+        className={`absolute left-0 top-0 z-30 h-full w-full bg-${bg}`}
       />
       <motion.div
         animate={{
