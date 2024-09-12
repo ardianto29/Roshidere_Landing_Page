@@ -3,3 +3,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    line-height: 1.45;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-lato text-normal;
+  }
+
+  ::selection {
+    @apply bg-primary text-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair;
+  }
+
+  a {
+    @apply text-inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* Lenis Configuration */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  /* Hero Section */
+  .nav__menu::after,
+  .nav__menu::before {
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @apply bg-background;
+  }
+
+  .nav__menu::after {
+    top: 50%;
+    width: 80%;
+  }
+
+  .nav__menu::before {
+    top: calc(50% + 5px);
+    width: 50%;
+  }
+
+  /* Product Section */
+  .products {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 30% repeat(2, calc(45% / 2));
+    grid-template-rows: repeat(3, calc(95vh / 3));
+    grid-template-areas:
+      "pro1 heading heading"
+      "pro1 pro2 pro3"
+      "pro1 pro4 pro5";
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .products__product--1 {
+    grid-area: pro1;
+  }
+
+  .products__heading {
+    grid-area: heading;
+    justify-self: end;
+  }
+
+  .products__product--2 {
+    grid-area: pro2;
+  }
+
+  .products__product--3 {
+    grid-area: pro3;
+  }
+
+  .products__product--4 {
+    grid-area: pro4;
+  }
+
+  .products__product--5 {
+    grid-area: pro5;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .products {
+      margin-inline: 0.5rem;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      grid-template-rows: repeat(4, 20rem);
+      grid-template-areas:
+        "heading heading"
+        "pro1 pro2"
+        "pro1 pro3"
+        "pro1 pro4"
+        ". pro5";
+    }
+
+    .products__heading {
+      align-self: end;
+      justify-self: center;
+    }
+  }
+}
