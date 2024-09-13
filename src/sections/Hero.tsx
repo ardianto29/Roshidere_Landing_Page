@@ -94,7 +94,7 @@ export function Hero() {
               <a href="#About">About</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#Waifu">Waifu</a>
+              <a href="#Characters">Waifu</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
               <a href="#Events">Events</a>
@@ -168,7 +168,7 @@ export function Hero() {
             type="link"
             href={"#Waifu"}
             className="absolute -bottom-[10.5%] left-1/2 -translate-x-1/2 rounded-md bg-background p-10 text-secondary">
-            OUR WAIFU
+            CHARACTER
           </Button>
         </div>
       </div>
