@@ -71,7 +71,7 @@ export function Hero() {
   }, []);
 
   return (
-    <header id="#" className="relative min-h-screen text-background">
+    <header id="Home" className="relative min-h-screen text-background">
       <AnimatePresence>
         {isNavOpen && (
           <motion.div
@@ -88,19 +88,19 @@ export function Hero() {
             </motion.div>
 
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#">Home</a>
+              <a href="#Home">Home</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#">About</a>
+              <a href="#About">About</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#">Waifu</a>
+              <a href="#Waifu">Waifu</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#">Events</a>
+              <a href="#Events">Events</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#">Contact</a>
+              <a href="#Contact">Contact</a>
             </motion.div>
           </motion.div>
         )}
@@ -166,7 +166,7 @@ export function Hero() {
           )}
           <Button
             type="link"
-            href={"#"}
+            href={"#Waifu"}
             className="absolute -bottom-[10.5%] left-1/2 -translate-x-1/2 rounded-md bg-background p-10 text-secondary">
             OUR WAIFU
           </Button>
