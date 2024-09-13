@@ -6,11 +6,19 @@ interface RevealImgProps {
   className?: string;
   origin?: string;
   bg?: string;
+  container?: React.RefObject<HTMLDivElement>;
 }
 
-export function RevealImg({ children, className, origin, bg }: RevealImgProps) {
-  const ref = useRef(null);
+export function RevealImg({
+  children,
+  className,
+  origin,
+  bg,
+  container,
+}: RevealImgProps) {
+  const ref = useRef(container?.current || null);
   const isInView = useInView(ref, { amount: 0.5, once: true });
+
   return (
     <div className={`${className} overflow-hidden`} ref={ref}>
       <motion.div
