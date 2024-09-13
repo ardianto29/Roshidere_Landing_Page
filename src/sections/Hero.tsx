@@ -106,11 +106,15 @@ export function Hero() {
         )}
       </AnimatePresence>
       <div className="absolute inset-0 left-1/2 top-1/2 h-[95%] w-[95%] -translate-x-1/2 -translate-y-1/2">
-        <img
+        <motion.img
           src={imageHero1}
           alt=""
+          initial={{ scale: 0.5 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.3 }}
           className="absolute inset-0 h-[110%] w-full object-cover"
         />
+
         <div className="absolute left-0 top-0 h-[110%] w-full bg-primary--op " />
 
         <div className="relative z-50 h-full">
@@ -166,7 +170,7 @@ export function Hero() {
           )}
           <Button
             type="link"
-            href={"#Waifu"}
+            href={"#Characters"}
             className="absolute -bottom-[10.5%] left-1/2 -translate-x-1/2 rounded-md bg-background p-10 text-secondary">
             CHARACTER
           </Button>
