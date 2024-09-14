@@ -47,7 +47,7 @@ export function About() {
           <div className="space-x-30">
             <Button
               className={`border-2 border-transparent bg-primary text-background`}>
-              <a href="#Character">Character</a>
+              <a href="#Characters">Character</a>
             </Button>
             <Button className={`border-[2px] border-primary text-primary`}>
               <a href="#Events">Our Events</a>
