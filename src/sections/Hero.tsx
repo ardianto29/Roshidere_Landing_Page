@@ -179,7 +179,7 @@ export function Hero() {
 
       {isVisible && (
         <div
-          className="fixed bottom-5 left-5 z-50 flex size-[5rem] cursor-pointer items-center justify-center rounded-full bg-primary text-[2.6rem] shadow-2xl"
+          className="fixed bottom-5 left-5 z-50 flex size-[4rem] cursor-pointer items-center justify-center rounded-full bg-primary text-[2.6rem] shadow-2xl"
           onClick={handleScrollTop}>
           <i className="ri-arrow-up-line"></i>
         </div>
