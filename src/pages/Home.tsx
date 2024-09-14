@@ -1,4 +1,5 @@
 import { About } from "../sections/About";
+import { Character } from "../sections/Character";
 import { Hero } from "../sections/Hero";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Hero />
       <main>
         <About />
+        <Character />
       </main>
     </>
   );
