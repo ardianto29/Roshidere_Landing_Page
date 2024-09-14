@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useResponsive } from "../hooks/useResponsive";
-import { Button, Container, Form } from "../components";
+import { Button, Container } from "../components";
 
 import imageHero1 from "../../public/images/bannerAlya.jpeg";
 import imageHero2 from "../../public/images/logoRoshidere.png";
