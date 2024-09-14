@@ -94,7 +94,7 @@ export function Hero() {
               <a href="#About">About</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
-              <a href="#Characters">Waifu</a>
+              <a href="#Characters">Characters</a>
             </motion.div>
             <motion.div variants={childVariants} onClick={handleOpenMenu}>
               <a href="#Events">Events</a>

@@ -9,7 +9,7 @@ export function About() {
 
   return (
     <section
-      id="about"
+      id="About"
       className="relative mt-[230px] flex min-h-screen items-center justify-center"
       ref={container}>
       <Container>
@@ -47,7 +47,7 @@ export function About() {
           <div className="space-x-30">
             <Button
               className={`border-2 border-transparent bg-primary text-background`}>
-              <a href="#Waifu">Character</a>
+              <a href="#Character">Character</a>
             </Button>
             <Button className={`border-[2px] border-primary text-primary`}>
               <a href="#Events">Our Events</a>
